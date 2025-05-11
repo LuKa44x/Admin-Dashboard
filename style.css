@@ -48,3 +48,85 @@ a, .sidebarList{
     background-color: black;
     color: white;
 }
+
+.headerContainer{
+    background-color: black;
+    color: white;
+    padding-bottom:20px;
+}
+.searchbarContainer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 50%;
+}
+.pfp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.searchbar{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar > input[type=search]{
+    width: 80%;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.userContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-items: self-end;
+}
+.userContainer > h3{
+    justify-self: start;
+}
+
+.headerContent{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 50%;
+}
+.headerTitle{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+.headerTitle > .pfp{
+    height: 100%;
+    width: 90px;
+    margin: 0 20px 0 50px;
+}
+.headerText{
+    font-size: 1.5em;;
+}
+.headerBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.btn{
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #f0f0f0;
+}
