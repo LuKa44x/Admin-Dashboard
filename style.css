@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
 }
-:root, body{
+:root{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
-    height: 100vh;
-    width: 100vw;
+}
+body{
+    height: 100%; /* allora se de zoommo si taglia sotto, se zoommo funziona ma se*/
+      width: 100vw; /*metto vh si taglia appena scrollo */
+     
 }
 .container{
     display:grid;
@@ -129,4 +132,114 @@ a, .sidebarList{
 }
 .btn:hover{
     background-color: #f0f0f0;
+}
+
+.contentContainer{
+    background-color: rgba(252, 219, 225, 0.596);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+}
+
+.myProjects{
+    grid-row: 2/span 5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
+
+.project{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-inline-start: 5px solid purple;
+
+}
+
+.project >h4{
+    align-self: center;
+    font-size: 18px;
+    margin-left:20px;
+}
+
+.project > p{
+    align-self: top;
+    font-size: 16px;
+    margin-left:20px;
+    
+}
+.projectIcons{
+    justify-self: self-end;
+    align-self: self-end;
+    margin-bottom: 20px;
+}
+
+.contentLogo{
+    width: 30px;
+    height: 30px;
+    margin:10px;
+    
+}
+#projectTitle, #announcementTitle, #trendingTitle{
+    margin:20px 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+#projectTitle{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+
+#announcementTitle{
+    grid-column: 2/3;
+}
+#trendingTitle{
+    grid-row: 3/4;
+}
+
+.announcementContent{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    gap:10px;
+    margin:20px;
+}
+.announcementContent > div{
+    font-size: 12px;
+}
+
+.announcementContent > div{
+    border-bottom: 1px solid gray;
+}
+
+.announcementContent > div:nth-child(3){
+    border-bottom: 0px;
+}
+
+.trendingContent{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    gap:10px;
+    margin:20px;
+}
+.trendingContent > div{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.trendingContent > div > h5 > p{
+    font-weight: normal;
+    font-size: 14px;
+    margin: 10px 0 ;
+    color: gray;
 }
