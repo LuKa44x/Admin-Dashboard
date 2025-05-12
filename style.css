@@ -6,6 +6,7 @@
 :root{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 body{
     height: 100%; /* allora se de zoommo si taglia sotto, se zoommo funziona ma se*/
@@ -156,7 +157,7 @@ a, .sidebarList{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border-inline-start: 5px solid purple;
-
+    box-shadow: var(--box-shadow);
 }
 
 .project >h4{
@@ -209,6 +210,7 @@ a, .sidebarList{
     padding: 20px;
     gap:10px;
     margin:20px;
+    box-shadow: var(--box-shadow);
 }
 .announcementContent > div{
     font-size: 12px;
@@ -230,6 +232,7 @@ a, .sidebarList{
     padding: 20px;
     gap:10px;
     margin:20px;
+    box-shadow: var(--box-shadow);
 }
 .trendingContent > div{
     display: flex;
